@@ -1,0 +1,122 @@
+/* 
+ * colors form my favorite Emacs theme (Twilight)
+ *
+ * blue #7587A6 (links)
+ * gray #5F5A60 (titles)
+ * light gray #D1D1D1 (borders)
+ *
+ */
+
+/* from jQuery UI */
+
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+
+
+a { color: #7587A6; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1,h2,h3,h4,h5,h6 {
+    color: #5F5A60;
+    margin-top: 0;
+}
+
+#hd {
+    border-right: solid 1px #D1D1D1;
+    padding-bottom: 15px;
+}
+
+#hd h1 {
+    margin-bottom: 5px;
+}
+
+#menu {
+    margin-bottom: 5px;
+}
+#menu a, #menu span {
+    padding: 2px;
+    margin: 0;
+}
+
+#menu span { /* active item */
+    font-weight: bold;
+    color: #5F5A60;
+}
+
+#ext-menu {
+    display:block;
+    float:right;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 0.8em;
+}
+
+#bd {
+    padding: 0 10px 20px 0;
+    min-height: 400px;
+    border-right: solid 1px #D1D1D1;
+    border-bottom: solid 1px #D1D1D1;
+}
+
+#ft {
+    padding-top: 5px;
+    text-align: right;
+    vertical-align: middle;
+    font-size: 85%;
+    color: #5F5A60;
+}
+
+#ft .license {
+    display: block;
+    float: left;
+}
+
+/* article styles */
+
+h2.article-header {
+    margin-bottom: 10px;
+}
+
+.article-date {
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    border-right: solid 1px #D1D1D1;
+    border-bottom: solid 1px #D1D1D1;
+    padding: 5px 15px;
+    margin-right: 10px;
+}
+
+.article-month {
+    font-size: 70%;
+}
+
+.article-day {
+    font-size: 105%;
+}
+
+.article-year {
+    font-size: 55%;
+    color: black;
+}
+
+.article-content {
+    margin-bottom: 30px;
+}
+
+.article-content pre {  /* source code */
+    margin-left: 5px;
+    padding-left: 10px;
+    border-left: solid 1px #D1D1D1;
+}
+
+
+@media print {
+    
+    #menu, #ext-menu, #ft { display: none; }
+
+    #hd, #bd { border: 0px; }
+}

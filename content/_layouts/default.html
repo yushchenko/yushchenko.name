@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="Valery Yushchenko" />
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Valery Yushchenko" />
 
+    <link rel="stylesheet" type="text/css" href="/css/yui2.css" />
+    <link rel="stylesheet" type="text/css" href="/css/master.css" />
 
-<div class="site">
+    <!-- <link rel="alternate" type="application/rss+xml"  href="http://feeds.feedburner.com/vyushchenko" title="rss feed"> -->
 
-  {{ content }}
+  </head>
+  <body>
+    <div class="site">
+      <div id="doc">
 
-</div>
+        <div id="hd">
+          <div id="ext-menu">
+            <a type="application/rss+xml" target="_blank" href="http://feeds.feedburner.com/vyushchenko" title="Feed this link to your favorite RSS reader :)">RSS</a>
+          </div>
+          <h1>Valery Yushchenko</h1>
+        </div>
 
-</body>
+        <div id="bd">
+          {{ content }}
+        </div>
+
+        <div id="ft">
+
+          <a class='license' rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/" target="_blank"> 
+            Creative Commons - Non Commercial
+          </a>
+
+          <span>&copy; 2010-2011 Valery Yushchenko.</span>
+        </div>
+      </div>
+  </body>
 </html>
- 

@@ -3,6 +3,6 @@ auto: true
 source: .
 destination: ../public
 
-permalink: date
+permalink: blog/:year/:month/:title
 
 
