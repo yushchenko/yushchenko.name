@@ -24,6 +24,14 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
 }
 
+.post ul li {
+    list-style: square;
+}
+
+.post ol li {
+    list-style: decimal;
+}
+
 #hd {
     border-right: solid 1px #D1D1D1;
     padding-bottom: 15px;
@@ -31,6 +39,8 @@ h1,h2,h3,h4,h5,h6 {
 
 #hd h1 {
     margin-bottom: 5px;
+    color: black;
+    font-size: 2em;
 }
 
 #menu {
@@ -119,4 +129,14 @@ h2.article-header {
     #menu, #ext-menu, #ft { display: none; }
 
     #hd, #bd { border: 0px; }
+}
+
+/* ---------- */
+
+.info {
+    text-align: right;
+}
+
+#photo {
+    margin-bottom: 10px;
 }
