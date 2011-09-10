@@ -140,3 +140,8 @@ h2.article-header {
 #photo {
     margin-bottom: 10px;
 }
+
+.light {
+    font-weight: normal;
+    color: #D1D1D1;
+}
