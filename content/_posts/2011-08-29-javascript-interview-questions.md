@@ -2,6 +2,7 @@
 layout: post
 title: "JavaScript Interview Questions"
 tags: [javascript, programming, work]
+categories: articles
 ---
 
 # {{ page.title }}

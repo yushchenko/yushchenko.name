@@ -2,6 +2,7 @@
 layout: post
 title: "'Casual' Exercises"
 tags: [health]
+categories: articles
 ---
 
 # {{ page.title }}

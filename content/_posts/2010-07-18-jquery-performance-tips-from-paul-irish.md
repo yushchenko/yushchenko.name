@@ -2,6 +2,7 @@
 layout: post
 title: "jQuery Performance Tips from Paul Irish"
 tags: [javascript, jquery, performance]
+categories: articles
 ---
 
 # {{ page.title }}

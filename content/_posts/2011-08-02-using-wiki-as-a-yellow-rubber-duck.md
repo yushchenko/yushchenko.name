@@ -2,6 +2,7 @@
 layout: post
 title: "Using Wiki as a Yellow Rubber Duck"
 tags: [programming, wiki]
+categories: articles
 ---
 
 # {{ page.title }}

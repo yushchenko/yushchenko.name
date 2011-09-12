@@ -1,9 +1,6 @@
-auto: true
-server_port: 7777
-
 source: .
 destination: ../public
 
-permalink: blog/:year/:month/:title
+permalink: /:categories/:year/:month/:title
 
 

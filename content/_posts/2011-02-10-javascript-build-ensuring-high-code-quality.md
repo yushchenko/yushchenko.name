@@ -2,6 +2,7 @@
 layout: post
 title: "JavaScript Build: Ensuring High Code Quality"
 tags: [javascript, build]
+categories: articles
 ---
 
 # {{ page.title }}

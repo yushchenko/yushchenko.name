@@ -2,6 +2,7 @@
 layout: post
 title: "Slow Riding Traning"
 tags: [motorcycle]
+categories: articles
 ---
 
 # {{ page.title }}

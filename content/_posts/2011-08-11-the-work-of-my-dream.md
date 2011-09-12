@@ -2,6 +2,7 @@
 layout: post
 title: "The Work Of My Dream"
 tags: [life, work]
+categories: articles
 ---
 
 # {{ page.title }}

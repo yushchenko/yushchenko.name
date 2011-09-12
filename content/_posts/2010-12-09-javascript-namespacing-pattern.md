@@ -2,6 +2,7 @@
 layout: post
 title: "A JavaScript Namespacing Pattern"
 tags: [javascript, namespacing]
+categories: articles
 ---
 
 # {{ page.title }}

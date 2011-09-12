@@ -9,8 +9,10 @@ title: Valery Yushchenko
     <h1>Articles</h1>
     <ul class="">
       {% for post in site.posts %}
-      <li><code>{{ post.date | date_to_string }} &raquo;
+        {% if post.categories contains 'articles' and post.draft == null %}
+        <li><code>{{ post.date | date_to_string }} &raquo;
           <a href="{{ post.url }}">{{ post.title }}</code></a></li>
+        {% endif %}
       {% endfor %}
     </ul>
     
@@ -24,6 +26,13 @@ title: Valery Yushchenko
 
     <h1>Photos</h1>
     <ul class="photos">
+      {% for post in site.posts %}
+        {% if post.categories contains 'photos' and post.draft == null %}
+        <li><code>{{ post.date | date_to_string }} &raquo;
+          <a href="{{ post.url }}">{{ post.title }}</code></a></li>
+        {% endif %}
+      {% endfor %}
+
       <li><code>03 Sep 2011 &raquo;
           <a href="http://www.flickr.com/photos/vyushchenko/sets/72157627469924855/">Toronto Open Powerlifting Competition</a></code></li>
     </ul>

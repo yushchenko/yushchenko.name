@@ -2,6 +2,7 @@
 layout: post
 title: "Bla-Bla-Bla Problem - Looking for Solutions"
 tags: [productivity, programming]
+categories: articles
 ---
 
 # {{ page.title }}
