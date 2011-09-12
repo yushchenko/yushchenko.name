@@ -18,8 +18,13 @@
       <div id="doc" class="yui-t4">
 
         <div id="hd">
-          <h1>Valery Yushchenko</h1>
-          <h3 class="light">Little is better than nothing</h3>
+          <small class="hd-menu">
+            {% if page.url != '/index.html' %}
+            <a href='/'>home</a>  &laquo;
+            {% endif %}
+          </small>
+          <h1><a href='/'>Valery Yushchenko</a></h1>
+          <h3><a href='/' class="light">Little is better than nothing</a></h3>
         </div>
 
         <div id="bd">
