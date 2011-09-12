@@ -1,59 +1,36 @@
 ---
-layout: default
+layout: index
 title: Valery Yushchenko
 ---
 
-<div id="yui-main" class="home">
-  <div class="yui-b">
+<h1>Articles</h1>
+<ul class="">
+  {% for post in site.posts %}
+    {% if post.categories contains 'articles' and post.draft == null %}
+    <li><code>{{ post.date | date_to_string }} &raquo;
+      <a href="{{ post.url }}">{{ post.title }}</code></a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
-    <h1>Articles</h1>
-    <ul class="">
-      {% for post in site.posts %}
-        {% if post.categories contains 'articles' and post.draft == null %}
-        <li><code>{{ post.date | date_to_string }} &raquo;
-          <a href="{{ post.url }}">{{ post.title }}</code></a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-    
-    <h1>Projects</h1>
-    <ul class="projects">
-      <li><code>Sep 2011 &raquo;
-          <a href="https://github.com/yushchenko/yushchenko.name">This site</a></code></li>
-      <li><code>Feb 2011 &raquo;
-          <a href="https://github.com/yushchenko/formEngine.js">formEngine.js</a></code></li>
-    </ul>
+<h1>Projects</h1>
+<ul class="projects">
+  <li><code>Sep 2011 &raquo;
+      <a href="https://github.com/yushchenko/yushchenko.name">This site</a></code></li>
+  <li><code>Feb 2011 &raquo;
+      <a href="https://github.com/yushchenko/formEngine.js">formEngine.js</a></code></li>
+</ul>
 
-    <h1>Photos</h1>
-    <ul class="photos">
-      {% for post in site.posts %}
-        {% if post.categories contains 'photos' and post.draft == null %}
-        <li><code>{{ post.date | date_to_string }} &raquo;
-          <a href="{{ post.url }}">{{ post.title }}</code></a></li>
-        {% endif %}
-      {% endfor %}
+<h1>Photos</h1>
+<ul class="photos">
+  {% for post in site.posts %}
+    {% if post.categories contains 'photos' and post.draft == null %}
+    <li><code>{{ post.date | date_to_string }} &raquo;
+      <a href="{{ post.url }}">{{ post.title }}</code></a></li>
+    {% endif %}
+  {% endfor %}
 
-      <li><code>03 Sep 2011 &raquo;
-          <a href="http://www.flickr.com/photos/vyushchenko/sets/72157627469924855/">Toronto Open Powerlifting Competition</a></code></li>
-    </ul>
-  </div>
-</div>
+  <li><code>03 Sep 2011 &raquo;
+      <a href="http://www.flickr.com/photos/vyushchenko/sets/72157627469924855/">Toronto Open Powerlifting Competition</a></code></li>
+</ul>
 
-<div class="yui-b info">
-  <div>
-    <img id="photo" width="150" height="180" src="/images/photo.jpeg"></img>
-  </div>
-  <small>
-    <span class="light">A JavaScript Developer</span><br />
-    <br />
-    <a href="mailto:valery@yushchenko.name" title="No junk mail, please.">valery@yushchenko.name</a> &laquo;<br />
-    <span title="Call me if it is really urgent.">+61 416 419 263</span>  &laquo;<br />
-    <br />
-    <a href="http://twitter.com/#!/vyushchenko" title="Thoughts, links etc.">@vyushchenko</a> &laquo;<br />
-    <a href="https://github.com/yushchenko" title="Sharing code.">Github</a> &laquo;<br />
-    <a href="http://www.flickr.com/photos/vyushchenko/" title="Playing with camera.">Flickr</a> &laquo;<br />
-    <br />
-    <a href="https://plus.google.com/106703830109370818653/posts" title="Keeping in touch with friends.">Google+</a> &laquo;<br />
-    <a href="http://www.linkedin.com/in/yushchenko" title="Keeping in touch with colleagues.">LinkedIn</a> &laquo;<br />
-  </small>
-</div>

@@ -2,6 +2,7 @@ var
   path = require('path'),
   http = require('http'),
   paperboy = require('./lib/paperboy'),
+  fs = require('fs'),
 
   PORT = 7777,
   WEBROOT = path.join(path.dirname(__filename), 'public');
@@ -19,6 +20,13 @@ http.createServer(function(req, res) {
     // })
     .after(function(statCode) {
       log(statCode, req.url, ip);
+    })
+    .otherwise(function(err) {
+      res.writeHead(404, {'Content-Type': 'text/html'});
+      fs.readFile(path.join(WEBROOT, '404.html'), function (err, data) {
+          res.end(data);
+      });
+      log(404, req.url, ip, err);
     });
 
     // .error(function(statCode, msg) {
@@ -26,15 +34,8 @@ http.createServer(function(req, res) {
     //   res.end("Error " + statCode);
     //   log(statCode, req.url, ip, msg);
     // })
-    // .otherwise(function(err) {
-    //   res.writeHead(404, {'Content-Type': 'text/plain'});
-    //   res.end("Error 404: File not found");
-    //   log(404, req.url, ip, err);
-    // });
 
 }).listen(PORT);
-
-console.log(WEBROOT);
 
 console.log('Listening port ' + PORT);
 
