@@ -1,1 +1,1 @@
-jekyll ~/projects/s2/content/ ~/projects/s2/public/
+jekyll ~/projects/yushchenko.name/content/ ~/projects/yushchenko.name/public/

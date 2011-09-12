@@ -1,4 +1,5 @@
 auto: true
+server_port: 7777
 
 source: .
 destination: ../public
