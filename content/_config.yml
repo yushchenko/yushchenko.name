@@ -3,4 +3,6 @@ destination: ../public
 
 permalink: /:categories/:year/:month/:title
 
+markdown: rdiscount
+
 
