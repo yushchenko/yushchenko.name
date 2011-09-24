@@ -7,7 +7,7 @@ categories: talks
 
 # {{ page.title }}
 
-<iframe class="video" width="640" height="360" src="http://www.youtube.com/embed/M9UIR83gBK8" frameborder="0" allowfullscreen></iframe>
+<iframe class="video" src="http://player.vimeo.com/video/29515748" width="640" height="360" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
 
 My talk at [SydJS][sydjs] on September 21 2011.
 
