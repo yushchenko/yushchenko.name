@@ -33,12 +33,20 @@ $(function() {
           if (passed > interval*60000) {
               started = null;
               timer.html('Start');
+              timer.get(0).style.color = 'white';
               tickingSound.pause();
               bellSound.play();
               return;
           }
 
           timer.html(m);
+          timer.get(0).style.color = getColor(m);
 
       }, 500);
+
+      function getColor(m) {
+          return m > 20 ? 'green' :
+                 m > 5 ?  'orange' :
+                          'red';
+      }
 });
