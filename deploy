@@ -1,3 +1,5 @@
 #!/bin/sh
 
+./build
+
 scp -r public/* user@yushchenko.name:~/www
