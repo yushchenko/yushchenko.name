@@ -3,7 +3,9 @@ $(function() {
       var started = null,
           interval = 25,
           timer = $('#timer'),
-          tickingSound = $('#ticking').get(0);
+          crankSound = $('#crank').get(0),
+          tickingSound = $('#ticking').get(0),
+          bellSound = $('#bell').get(0);
 
       $('body').click(function() {
 
@@ -13,6 +15,7 @@ $(function() {
 
           started = new Date();
           timer.html(interval);
+          crankSound.play();
           tickingSound.play();
           
       });
@@ -30,6 +33,8 @@ $(function() {
           if (passed > interval*60000) {
               started = null;
               timer.html('Start');
+              tickingSound.pause();
+              bellSound.play();
               return;
           }
 
