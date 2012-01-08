@@ -1,0 +1,34 @@
+body {
+    background: #333;
+
+    font-size: 48pt;
+    font-family: monospace;
+}
+
+#container {
+
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.start {
+    color: white;
+}
+
+.just-started {
+    color: green;
+}
+
+.in-process {
+    color: orange;
+}
+
+.close-to-finish {
+    color: red;
+}
+
+/* audio { */
+/*     display: none; */
+/* } */
