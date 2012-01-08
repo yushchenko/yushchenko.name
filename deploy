@@ -1,0 +1,3 @@
+#!/bin/sh
+
+scp -r public/* user@yushchenko.name:~/www
