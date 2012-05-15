@@ -2,4 +2,4 @@
 
 ./build
 
-scp -r public/* user@yushchenko.name:~/www
+cp -r public/* ../yushchenko.github.com/
